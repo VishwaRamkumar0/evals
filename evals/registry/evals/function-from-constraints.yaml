@@ -1,0 +1,10 @@
+function-from-constraints:
+  id: function-from-constraints.dev.v0
+  metrics: [accuracy]
+
+function-from-constraints.dev.v0:
+  class: evals.elsuite.modelgraded.classify:ModelBasedClassify
+  args:
+    samples_jsonl: function-from-constraints/samples.jsonl
+    eval_type: cot_classify
+    modelgraded_spec: fact
